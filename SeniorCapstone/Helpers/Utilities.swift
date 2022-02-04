@@ -1,24 +1,14 @@
 //
-//  LoginViewController.swift
+//  Utilities.swift
 //  SeniorCapstone
 //
-//  Created by Jeffrey Voltaire on 2/3/22.
+//  Created by Jeffrey Voltaire on 2/4/22.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class Utilities: UIViewController {
 
-    @IBOutlet weak var firstNameTextField: UITextField!
-    
-    @IBOutlet weak var lastNameTextField: UITextField!
-    
-    @IBOutlet weak var loginButton: UIButton!
-    
-    @IBOutlet weak var errorLabel: UILabel!
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,6 +26,4 @@ class LoginViewController: UIViewController {
     }
     */
 
-    @IBAction func loginTapped(_ sender: Any) {
-    }
 }

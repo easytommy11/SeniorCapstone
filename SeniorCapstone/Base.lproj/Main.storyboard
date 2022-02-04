@@ -46,6 +46,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="zFG-qb-2fj" eventType="touchUpInside" id="8lQ-f2-Hor"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiX-fD-4LY">
                                         <rect key="frame" x="0.0" y="300" width="334" height="20.5"/>
@@ -71,6 +74,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6vL-px-Gin"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="cR5-N1-4nL" id="HiS-8q-lv5"/>
+                        <outlet property="errorLabel" destination="uiX-fD-4LY" id="Nb0-0V-Mcn"/>
+                        <outlet property="firstNameTextField" destination="x2L-hX-yLF" id="Fd5-X8-1bm"/>
+                        <outlet property="lastNameTextField" destination="eLv-Lh-Jl4" id="Ub3-2E-ZI5"/>
+                        <outlet property="passwordTextField" destination="aEj-HZ-BOQ" id="Spy-na-NRH"/>
+                        <outlet property="signUpButton" destination="ZdO-ob-bkH" id="1Ae-KQ-7ne"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wo4-Kv-5eB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,10 +103,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yr2-Oc-C3g">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yr2-Oc-C3g">
                                         <rect key="frame" x="0.0" y="60" width="334" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5y9-LU-y3I">
                                         <rect key="frame" x="0.0" y="120" width="334" height="40"/>
@@ -104,6 +115,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Log In"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="QLP-OD-SsK" eventType="touchUpInside" id="ivj-Uo-xGh"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIu-at-M3Z">
                                         <rect key="frame" x="0.0" y="180" width="334" height="20.5"/>
@@ -127,6 +141,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vxd-bl-Cdf"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="SIu-at-M3Z" id="JwU-aw-KVA"/>
+                        <outlet property="firstNameTextField" destination="XuN-F3-A9U" id="qMC-wT-nyz"/>
+                        <outlet property="lastNameTextField" destination="Yr2-Oc-C3g" id="BpA-ZC-gB1"/>
+                        <outlet property="loginButton" destination="5y9-LU-y3I" id="RaF-B2-tZV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6i-3C-4jg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,6 +197,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JVU-2c-yxg"/>
+                    <connections>
+                        <outlet property="logInButton" destination="vYo-9a-UQY" id="2HN-YZ-HbR"/>
+                        <outlet property="signUpButton" destination="euM-Yg-0lt" id="gha-RH-XVb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
